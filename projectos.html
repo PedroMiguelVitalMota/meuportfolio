@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/css.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <nav class="menubar">
+        <div class="grid3x3">
+            <div class="col started">
+                <a href="./projectos.html">Projectos</a>
+                <a href="#Videos">Videos</a>
+                <a href="#imagem">Imagem</a>
+            </div>
+            <div class="col center">
+                <a href="index.html">
+                    <h3>
+                        Pedro Mota
+                    </h3>
+                </a>
+            </div>
+            <div class="col ended">
+                <a href="./index.html">Sobre</a>
+                <a href="./contact.html" class="activo">Contactos</a>
+            </div>
+        </div>
+    </nav>
+    <div class="parallax-window height50" id="target1" data-parallax="scroll">
+    </div>
+
+    <div class="container" id="Videos" style="margin: 10em 0em 0em 0em">
+        <header class="width50" style="margin: 0 auto; padding: 2em 0em">
+            <h1>Videos</h1>
+        </header>
+        <div class="grid2x2 width50 height50 gap1">
+            <video controls class="width-full" src="./assets/videos/TrackCamera/video render.mp4" frameborder="0"></video>
+            <video controls class="width-full" src="./assets/videos/Trailler/TeaserPAP.mp4" frameborder="0"></video>
+
+            <video controls class="width-full" src="./assets/videos/Trailler/Trailler Desportos.mp4" frameborder="0"></video>
+            <video controls class="width-full" src="./assets/videos/animacoes/Comp 1.mp4" frameborder="0"></video>
+        </div>
+    </div>
+
+    <div class="container" id="imagem" style="margin: 10em 0em 0em 0em">
+        <header class="width50" style="margin: 0 auto; padding: 2em 0em">
+            <h1>Imagem / logotipos</h1>
+        </header>
+        <div class="grid2x2 width50 center">
+            <img class="height" style="height: 300px;" src="./assets/svgs/marketland.svg" alt="">
+            <img class="height" style="height: 300px;" src="./assets/svgs/GamesMemory.svg" alt="">
+            <img class="height" style="height: 300px;" src="./assets/svgs/CyberDsn.svg" alt="">
+            <img class="height" style="height: 300px;" src="./assets/svgs/savagesport.svg" alt="">
+        </div>
+        <div class="grid2x2 width50 center">
+            <img class="height" style="height: 300px;" src="./assets/imgs/manipulação-para-a-samsung.jpg" alt="">
+            <img class="height" style="height: 300px;" src="./assets/imgs/Mupi.jpg" alt="">
+            <img class="height" style="height: 300px;" src="./assets/imgs/Muppie.jpg" alt="">
+            <img class="height" style="height: 300px;" src="./assets/imgs/Mascara-(1).jpg" alt="">
+        </div>
+    </div>
+</body>
+<script src="https://cdn.lordicon.com/lusqsztk.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="./parallax/parallax.js"></script>
+<script>
+    $('#target1').parallax({
+        imageSrc: './pic/pexels-pixabay-257904.jpg',
+        position: (0, 0),
+        bleed: 9,
+        zIndex: 0
+    });
+</script>
+
+</html>
